@@ -1,0 +1,594 @@
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    /* removing standart gaps under and on the sides of navigation */
+
+    /* background-image: url(../images/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover; Resize the background image to cover the entire container */
+
+  }
+
+.navbar{
+    width: 100%;
+    height: 120px;
+    /* background-color: antiquewhite; */
+}
+
+.navbar .container{
+    height: inherit;
+    /* inherit - visota zavisit ot visoti .nabar-a, container tozhe dolzhen imet visotu */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu{
+    list-style-type: none;
+    /* list-style-type  - removes the dots in li  */
+
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 130px;
+    /* padding: 60px; */
+    
+    
+}
+
+.navbar-menu li{
+/* we need to have all Li's in line */
+    display: inline-block;
+}
+
+.navbar-menu li a{
+    /* we need to have all a's in one line*/
+        display: inline-block;
+        padding: 60px;
+}
+
+.site-name{
+    margin-left: 122px;
+    display: inline-block;
+    /* ostup sleva dluia FURNITURE */
+    /* vneshnee rasstoianie */
+
+    font-family: Montserrat-Bold;
+    font-size: 34px;
+    color: #054C73;
+    text-decoration: none;  /* removes underline */
+}
+
+/* styles for Links in Navba, deciseded to write styling separately for learning purposesr */
+.navbar-menu li a{
+    text-decoration: none;
+    font-family: Montserrat-Bold;
+    font-size: 14px;
+    color: #333333;
+}
+
+.navbar-wrap{
+    display: flex;
+    padding: 60px;
+}
+
+/* BACKGROUND PART */
+
+.background-part{
+    display: flex;
+    /* flex dlia togo chto bi zaniat prostranstvo, inaches on dvigaetsia vmeste s right-side card */
+    height: 750px;
+    background-image: url(../images/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #eeeeee;
+
+}
+
+.right-side-card{
+    /* sizes */
+    height: 443px;
+    width: 643px;
+    background: #DFE9F4;
+    border-radius: 10px;
+
+    /* where it should be */
+    margin-top: 130px;
+    margin-left: 957px;
+}
+
+.right-side-card p:nth-child(1){
+    font-family: Montserrat-SemiBold;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 3px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.right-side-card p:nth-child(2){
+    font-family: Montserrat-Bold;
+    font-size: 52px;
+    color: #054C73;
+    margin-top: 1px;
+    margin-left: 40px;
+}
+
+.right-side-card p:nth-child(3){
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: #333333;
+    margin-top: -25px;
+    /* not sure why in minus */
+
+    margin-left: 40px;
+    width: 550px;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat-Bold;
+    font-size: 18px;
+}
+
+.button{
+    background: #054C73;
+    border-radius: 50px;
+    padding: 26px 68px;
+    display: inline-block;
+    /*  */
+    
+    margin: 40px 40px;
+    /* margin-left: 40px;
+    margin-top: 40px; */
+    text-align: center;
+}
+
+/* THE DELIVERY/SUPPORT LINE */
+
+.support-line{
+    height: 150px;
+    width: 100%;
+    background: #F2F5FF;
+    align-items: center;
+    
+}
+
+.support-line h3{
+    font-family: Montserrat-SemiBold;
+    font-size: 24px;
+    color: #333333;
+}
+
+.support-line p{
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+
+.support-line{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* align-items: ; */
+}
+
+.support-line img{
+    float: left;
+    /* align-items: center; */
+}
+
+.delivery, .support, .authentic{
+    width: 350px;
+    /* margin-top: 100px; */
+    align-items: center;
+}
+
+.support-line img{
+    padding: 20px;
+}
+
+
+/* COLLECTION PART */
+
+.collection{
+    width: 100%;
+    height: 730px;
+}
+
+.collection h2{
+    font-family: Montserrat-SemiBold;
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+
+}
+
+.collection p{
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+
+.cards-photos img:nth-child(1){
+    border-radius: 70px 0px 0px 0px;
+}
+
+.cards-photos img:nth-child(2){
+    /* margin-top: 80px; */
+    margin-top: -40px;
+    margin-bottom: 40px;
+
+    /* there was also another way to make it i know , but i don;t know which lol */
+}
+
+.cards-photos img:nth-child(3){
+    border-radius: 0px 0px 70px 0px;
+}
+
+.cards-photos {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 40px;
+    margin-top: 125px;
+}
+
+
+/* BEAUTIFY PART */
+
+.beautify-container{
+    display: flex;
+    justify-content: space-between;
+    /* to place them on both sides of the site and keep flexible */
+
+    height: 874px;
+    width: 100%;
+    background: #F2F5FF;
+    display: flex;
+    /* without this flex marging top below is not working */
+}
+
+
+.left-site h2{
+    margin-top: 310px;
+    margin-left: 162px;
+    font-family: Montserrat-SemiBold;
+    font-size: 32px;
+}
+
+.left-site p{
+    margin-top: -13px;
+    margin-left: 162px;
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    /* width: ; */
+
+}
+
+.left-site a{
+    display: inline-block;
+    /* beacause a tag is bloack, otherwise it moved onle with margin left, but not margin top */
+
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: #054C73;
+    margin-top: 20px;
+    margin-left: 162px;
+    font-family: Montserrat-SemiBold;
+    font-size: 20px;
+    padding: 25px 43px;
+    border-radius: 50px;
+}
+
+.right-side img:nth-child(1){
+    /* margin-top: ;
+    margin-right: ; */
+    border-radius: 70px 10px 70px 10px;
+}
+
+/* 
+ */
+
+.right-side{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 765px;
+    width: 590px;
+}
+
+.image1{
+    position: absolute;
+    top: 60px;
+    right: 150px;
+    z-index: 10;
+}
+
+.image2{
+    top: 240px;
+    left: 170px;
+    position: relative;
+    z-index: 9;
+}
+
+
+/* START NEXT PART - BROWSE THE RANGE */
+
+.browse-the-range{
+    margin: 0;
+    padding: 0.1px;
+    /* I DON'T KNOW HOT TO DO IT OTHER WAY :D  */
+
+    width: 100%;
+    height: 800px;
+    background: #E5E5E5;
+}
+
+.browse-the-range h2{
+    font-family: Montserrat-SemiBold;
+    font-size: 32px;
+    color: #333333;
+    text-align: center;
+    /* margin: 0; */
+}
+
+.browse-the-range p{
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: #666666;
+    text-align: center;
+}
+
+.cards-photos-browse-range{
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+
+}
+
+
+.images img{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.images{
+    margin-top: 60px;
+
+}
+
+.cards-photos-browse-range p{
+    font-family: Montserrat-SemiBold;
+    font-size: 24px;
+    color: #333333;
+}
+
+hr{
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgb(192, 191, 191);
+}
+
+
+/* HOW IT WORKS */
+
+.how-it-works{
+    background: #E5E5E5;
+    height: 936px;
+    margin: 0;
+    padding: 0.1px;
+
+    width: 100%;
+    height: 965px;
+}
+
+.how-it-works-images{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 58px;
+}
+
+.how-it-works-images img{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.how-it-works h3{
+    font-family: Montserrat-Bold;
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+}
+
+.how-it-works p{
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    text-align: center;
+    color: #666666;
+}
+
+.images-how-it-works h2{
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+    margin-top: 5px;
+}
+
+.images-how-it-works p{
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    text-align: center;
+    color: #666666;
+    width: 408px;
+}
+
+
+/*  */
+
+.circle p{
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    color: white;
+    border-radius: 50%;
+    /* border: 10px solid white; */
+    border: 20px solid #E5E5E5;;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    padding: 6px;
+
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+/* JOIN OUR MAILING LIST */
+
+.join{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 361px;
+    background-color:#F2F5FF    ;
+    margin: 0;
+    padding: 0.1px;
+    /* /* align-items: center; */
+    /* text-align: center; */
+    /* WHY ONLY THIS ALLIGNS THIS ITEMS TO CENTER ; (  */
+}
+
+.join h2{
+    font-family: Montserrat-Bold;
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+    margin-top: 60px;  
+}
+
+.join p{
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: #666666;
+}
+
+.email-submit input{
+    display: inline;
+    box-sizing: border-box;
+    padding: 24px 80px;
+    border: 2px solid #054C73;
+    font-size: 16px;
+    text-align: left;
+}
+
+.email-submit a{
+    text-decoration: none;
+    font-family: Montserrat-SemiBold;
+    font-size: 16px;
+    padding: 26px 55px;
+    border: ;
+    color: white;
+    background-color: #011C42;
+    border-radius: 10px;
+    margin-left: -10px;
+    /* margin-top: 1px; */
+
+    /* NOT DONE : (  */
+}
+
+.email-submit{
+display: flex;
+justify-content: center;
+margin-top: 55px;
+}
+
+/* FOOTER SHMOOTER */
+footer{
+    margin: 0;
+    padding: 0.1px;
+    height: 390px;
+    width: 100%;
+    background-color: #03344F;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.right-container{
+    width: 35%;
+    height: 300px;
+    /* background-color: rgb(119, 116, 116); */
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+.right-container h2{
+font-family: Montserrat-SemiBold;
+font-size: 24px;
+color: white;
+}
+
+.right-container p{
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    color: white;
+    margin-top: 45px;
+}
+
+.right-container a{
+    text-decoration: none;
+    font-family: Montserrat-SemiBold;
+    font-size: 24px;
+    color: white;
+    margin-top: 200px;
+/* WHY MARGIN IS NOT WORKING ?  */
+}
+
+
+.container{
+    display: flex;
+    /* justify-content: ; */
+}
+
+.left-container{
+    margin-top: 40px;
+    margin-left: 20px;
+    /* display: ; */
+}
+
+.left-container h2{
+    font-family: Montserrat-SemiBold;
+    font-size: 24px;
+    color: white;
+}
+
+.images-instagram{
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+}
